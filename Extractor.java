@@ -1,5 +1,11 @@
 import java.util.List;
 
+/**
+ * 
+ * A Java Code for searching and filtering phone numbers starting with
+ * 0807, 0812, 0806, 234806, +234806 and the length should be 11
+ */
+
 public class Extractor {
 
     public static void main(String[] args) {
