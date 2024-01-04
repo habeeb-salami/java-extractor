@@ -1,1 +1,11 @@
-mport java.util.regex; public class PhoneNumberFilter { public static List filterNumbers(String[] phoneNumbers) { List validNumbers = new ArrayList<>(); String pattern = "^(235|0806)\\d{8}$"; // Regex pattern for matching desired format Pattern compiledPattern = Pattern.compile(pattern); for (String phoneNumber : phoneNumbers) { Matcher matcher = compiledPattern.matcher(phoneNumber); if (matcher.matches()) { validNumbers.add(phoneNumber); } } return validNumbers; } public static void main(String[] args) { String[] sampleNumbers = {"2351234567", "08067654321", "1234567890", "0812345678", "2359876543"}; List filteredNumbers = filterNumbers(sampleNumbers); System.out.println("Valid phone numbers:"); for (String number : filteredNumbers) { System.out.println(number); } } }
+public class Extractor{
+
+    public static void main(String[] args) {
+        String[] sampleNumbers = { "2351234567", "08067654321", "1234567890", "0812345678", "2359876543" };
+        List filteredNumbers = filterNumbers(sampleNumbers);
+        System.out.println("Valid phone numbers:");
+        for (String number : filteredNumbers) {
+            System.out.println(number);
+        }
+    }
+}
