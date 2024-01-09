@@ -9,10 +9,11 @@ import java.util.List;
 public class Extractor {
 
     public static void main(String[] args) {
-
+        phoneNumbersExtractor();
+        emailExtractor();
     }
 
-    private void phoneNumbersExtractor() {
+    private static void phoneNumbersExtractor() {
         PhoneNumberFilter numberFilter = new PhoneNumberFilter("^(0807|0812|0806|234806|\\+234806)\\d{8}$");
         String[] sampleNumbers = { "2348061234567", "08067654321", "1234567890", "0812345678", "2359876543",
                 "+23480687654321" }; // Added numbers for testing
@@ -24,7 +25,7 @@ public class Extractor {
         }
     }
 
-    private void emailExtractor() {
+    private static void emailExtractor() {
         EmailFilter filter = new EmailFilter();
         String sampleText = "Contact us at support@example.com or sales@example.net for more information.";
         List<String> filteredEmails = filter.filterEmails(sampleText);
