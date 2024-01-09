@@ -24,5 +24,5 @@ Remember, it's important to use phone number filtering in a responsible and ethi
 ## License
 This license is licensed under the MIT license
 ## Email Extractor
-This Code can extract phone numbers from files, webpages, etc. from
+This Code can extract emaill addresses from files, text,  webpages, etc. from
 
